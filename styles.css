@@ -1,0 +1,122 @@
+:root {
+
+/* Dark cyan: */
+--dark-cyan: hsl(185, 75%, 39%); 
+/* Very dark desaturated blue:  */
+--very-dark-blue: hsl(229, 23%, 23%);
+/* Dark grayish blue:  */
+--dark-blue: hsl(227, 10%, 46%);
+
+--dark-gray: hsl(0, 0%, 59%);
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    background: url(./images/bg-pattern-bottom.svg) 80rem 40rem no-repeat fixed, url(./images/bg-pattern-top.svg) -30rem -50rem no-repeat;
+    background-color: var(--dark-cyan);
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-container {
+
+    background: white;
+    width: 375px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card-container img:nth-child(1) {
+    width: 100%;
+}
+
+.card-container img:nth-child(2) {
+    border: 6px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.card-container .card-information {
+    width: 100%;
+}
+
+.card-container .card-information .card-information__basic {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-container .card-information .card-information__basic > span {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: var(--dark-gray);
+}
+
+.card-container .card-information .card-information__basic div {
+    display: flex;
+    align-items: center;
+}
+
+.card-container .card-information .card-information__basic div p{
+    font-weight: 700;
+}
+
+.card-container .card-information .card-information__basic div span {
+    margin-left: 10px;
+    color: var(--dark-gray);
+}
+
+.card-container .card-information__stats {
+    display: flex;
+    bottom: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    justify-content: space-around;
+    padding: 30px 30px;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.card-container .card-information__stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container .card-information__stats p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-dark-blue)
+}
+
+.card-container .card-information__stats span {
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
